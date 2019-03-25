@@ -10,6 +10,12 @@ Table of contents
 
 1. [Tips](#tips)
 1. [User](#user)
+1. [Article](#article)
+1. [Campaign](#campaign)
+1. [Exchange](#exchange)
+1. [Product](#product)
+1. [Reward](#reward)
+1. [Wishlist](#wishlist)
 
 # Tips
 ## STATUS CODE
@@ -316,31 +322,6 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-## /USER/FORGOT
-
-**Method:** POST
-
-**Summary:** {{url}}/api/user/forgot
-
-**Description:** API Forgot Password
-
-**HTTP Request**
-`***POST*** /user/forgot` 
-
-**Parameters**
-
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
-| Content-Type | header |  | Yes | string |
-| x-scope | header |  | Yes | string |
-| email | body |  | Yes |  |
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | oke |
-
 ## /USER/RESET
 
 **Method:** POST 
@@ -413,6 +394,386 @@ GET /product/find?image.imageThumb=link
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | Content-Type | header |  | Yes | string |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# ARTICLE
+## /ARTICLE/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/article/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /article/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /ARTICLE/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/article/find
+
+**Description:** API get list article
+
+**HTTP Request**
+`***GET*** /article/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /ARTICLE/FINDONE/1
+**Method:** GET
+
+**Summary:** {{url}}/api/article/findOne/1
+
+**Description:** API detail article
+
+**HTTP Request**
+`***GET*** /article/findOne/2` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# REWARD
+
+( VOUCHER - COUPON - GIFT )
+
+## /REWARD/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/reward/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /reward/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /REWARD/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/reward/find?_limit=2&_start=0&_attribute=id,title&title_contains=%cải tiến%
+
+**Description:** API get list reward
+
+**HTTP Request**
+`***GET*** /reward/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| _limit | query |  | No | integer |
+| _start | query |  | No | integer |
+| _attribute | query |  | No | string |
+| title_contains | query |  | No | string |
+| x-scope | header |  | yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /REWARD/FINDONE/1
+**Method:** GET
+
+**Summary:** {{url}}/api/reward/findOne/1
+
+**Description:** API detail reward
+
+**HTTP Request**
+`***GET*** /reward/findOne/1` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# PRODUCT
+## /PRODUCT/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/product/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /product/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /PRODUCT/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/product/find
+
+**Description:** API get list product
+
+**HTTP Request**
+`***GET*** /product/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /PRODUCT/FINDONE/1
+**Method:** GET
+
+**Summary:** {{url}}/api/product/findOne/1
+
+**Description:** API detail product
+
+**HTTP Request**
+`***GET*** /product/findOne/1` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# CAMPAIGN
+## /CAMPAIGN/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/campaign/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /campaign/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /CAMPAIGN/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/campaign/find
+
+**Description:** API get list campaign
+
+**HTTP Request**
+`***GET*** /campaign/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /CAMPAIGN/FINDONE/1
+**Method:** GET
+
+**Summary:** {{url}}/api/campaign/findOne/1
+
+**Description:** API detail campaign
+
+**HTTP Request**
+`***GET*** /campaign/findOne/1` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# EXCHANGE
+## /EXCHANGE/SCHEMA
+**Method:** GET
+
+**Summary:** {{url}}/api/exchange/schema
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /exchange/schema` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /EXCHANGE/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/exchange/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /exchange/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /EXCHANGE/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/exchange/find
+
+**Description:** API get list exchange
+
+**HTTP Request**
+`***GET*** /exchange/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /EXCHANGE/FINDONE/1
+**Method:** GET
+
+**Summary:** {{url}}/api/exchange/findOne/1
+
+**Description:** API detail exchange
+
+**HTTP Request**
+`***GET*** /exchange/findOne/1` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
 
