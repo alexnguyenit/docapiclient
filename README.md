@@ -782,3 +782,73 @@ GET /product/find?image.imageThumb=link
 | Code | Description |
 | ---- | ----------- |
 | 200 | oke |
+
+# WISHLIST
+## /WISHLIST/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/wishlist/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /wishlist/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /WISHLIST/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/wishlist/find
+
+**Description:** API get list wishlist
+
+**HTTP Request**
+`***GET*** /wishlist/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /WISHLIST/FINDONE/1
+**Method:** GET
+
+**Summary:** {{url}}/api/wishlist/findOne/1
+
+**Description:** API detail wishlist
+
+**HTTP Request**
+`***GET*** /wishlist/findOne/1` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
