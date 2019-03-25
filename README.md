@@ -124,6 +124,45 @@ GET /product/find?image.imageThumb=link
 ... 
 
 # USER
+
+## /USER/OTP
+
+**Method:** POST
+
+**Summary:** {{url}}/api/user/otp
+
+**Description:** API otp
+
+**HTTP Request**
+`***POST*** /user/otp` 
+
+**Parameters**
+
+*otp Actived User*
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| Content-Type | header |  | Yes | string |
+| x-scope | header |  | Yes | string |
+| name | body |  | Yes |  |
+| phone | body |  | Yes |  |
+| email | body |  | Yes |  |
+
+*otp Forgot Password*
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| Content-Type | header |  | Yes | string |
+| x-scope | header |  | Yes | string |
+| type | body | otpUserForgot | Yes |  |
+| phone | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 ## /USER/LOGIN
 
 **Method:** POST
@@ -232,30 +271,6 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-## /USER/COUNT
-
-**Method:** GET
-
-**Summary:** {{url}}/api/user/count
-
-**Description:** API profile
-
-**HTTP Request**
-`***GET*** /user/count` 
-
-**Parameters**
-
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
-| x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | oke |
-
 ## /USER/MODIFY
 
 **Method:** PUT
@@ -346,30 +361,6 @@ GET /product/find?image.imageThumb=link
 | password | body |  | Yes |  |
 | confirm | body |  | Yes |  |
 | reset_password_token | body |  | Yes |  |
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | oke |
-
-## /USER/FIND
-
-**Method:** GET
-
-**Summary:** {{url}}/api/user/find
-
-**Description:** API list all User
-
-**HTTP Request**
-`***GET*** /user/find` 
-
-**Parameters**
-
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
-| x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
 
 **Responses**
 
