@@ -783,6 +783,44 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
+## /EXCHANGE/CREATE
+
+**Method:** POST 
+
+**Summary:** {{url}}/api/exchange/create
+
+**Description:** Create exchange
+
+**HTTP Request**
+`***POST*** /exchange/create` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| Content-Type | header |  | Yes | string |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| title | header | Tiêu đề sự kiện tương tác, giao dịch | Yes | string |
+| type | header | Kiểu tương tác giao dịch với: 0 - Hoạt động không ảnh hưởng tới điểm, 1 - Nạp điểm, 2 - Tiêu điểm | Yes | string |
+| source | header | Nguồn phát sinh tương tác, giao dịch | Yes | string |
+| amount | header | Giá trị giao dịch | No | string |
+| point | header | Số điểm quy đổi | No | string |
+| product | header | Thông tin sản phẩm có liên quan tới tương tác, giao dịch | No | string |
+| campaign | header | Thông tin chiến dịch có liên quan tới tương tác, giao dịch | No | string |
+| program | header | Thông tin chương trình có liên quan tới tương tác, giao dịch | No | string |
+| data | header | Thông tin nội dung voucher, coupon có liên quan tới tương tác, giao dịch | No | string |
+| description | header | Thông tin mô tả về sự kiện tương tác, giao dịch | No | string |
+| note | header | Thông tin ghi chú về sự kiện tương tác, giao dịch | No | string |
+| brand_id | header | Mã ID sở hữu giao dịch với mặc định 0 là của bất kỳ doanh nghiệp nào | Yes | string |
+| status | header | Trạng thái của sự kiện, giao dịch với: 0 - Không có hiệu lực, 1 - Đang được kích hoạt, 2 - Đang chờ được phê duyệt, 3 - Đã được phê duyệt chấp thuận, 4 - Đã bị phê duyệt từ chối | No | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # WISHLIST
 ## /WISHLIST/COUNT
 **Method:** GET
