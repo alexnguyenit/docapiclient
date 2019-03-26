@@ -890,3 +890,27 @@ GET /product/find?image.imageThumb=link
 | Code | Description |
 | ---- | ----------- |
 | 200 | oke |
+
+# /TASK
+## /TASK/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/task/find
+
+**Description:** API get list task
+
+**HTTP Request**
+`***GET*** /task/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
