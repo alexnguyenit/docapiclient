@@ -11,10 +11,8 @@ Table of contents
 1. [Tips](#tips)
 1. [User](#user)
 1. [Article](#article)
-1. [Campaign](#campaign)
+1. [Offer](#offer)
 1. [Exchange](#exchange)
-1. [Product](#product)
-1. [Reward](#reward)
 1. [Wishlist](#wishlist)
 
 # Tips
@@ -473,19 +471,19 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-# REWARD
+# OFFER
 
 ( VOUCHER - COUPON - GIFT )
 
-## /REWARD/COUNT
+## /OFFER/COUNT
 **Method:** GET
 
-**Summary:** {{url}}/api/reward/count
+**Summary:** {{url}}/api/offer/count
 
 **Description:** API count
 
 **HTTP Request**
-`***GET*** /reward/count` 
+`***GET*** /offer/count` 
 
 **Parameters**
 
@@ -500,15 +498,15 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-## /REWARD/FIND
+## /OFFER/LIST
 **Method:** GET
 
-**Summary:** {{url}}/api/reward/find?_limit=2&_start=0&_attribute=id,title&title_contains=%cải tiến%
+**Summary:** {{url}}/api/offer/list?_limit=2&_start=0
 
-**Description:** API get list reward
+**Description:** API get list offer
 
 **HTTP Request**
-`***GET*** /reward/find` 
+`***GET*** /offer/list` 
 
 **Parameters**
 
@@ -516,8 +514,6 @@ GET /product/find?image.imageThumb=link
 | ---- | ---------- | ----------- | -------- | ---- |
 | _limit | query |  | No | integer |
 | _start | query |  | No | integer |
-| _attribute | query |  | No | string |
-| title_contains | query |  | No | string |
 | x-scope | header |  | yes | string |
 | Authorization | header |  | Yes | string |
 
@@ -527,15 +523,15 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-## /REWARD/FINDONE/1
+## /OFFER/DETAIL/1
 **Method:** GET
 
-**Summary:** {{url}}/api/reward/findOne/1
+**Summary:** {{url}}/api/offer/detail/1
 
-**Description:** API detail reward
+**Description:** API detail offer
 
 **HTTP Request**
-`***GET*** /reward/findOne/1` 
+`***GET*** /offer/detail/1` 
 
 **Parameters**
 
