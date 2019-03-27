@@ -550,76 +550,6 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-# PRODUCT
-## /PRODUCT/COUNT
-**Method:** GET
-
-**Summary:** {{url}}/api/product/count
-
-**Description:** API count
-
-**HTTP Request**
-`***GET*** /product/count` 
-
-**Parameters**
-
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
-| x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | oke |
-
-## /PRODUCT/FIND
-**Method:** GET
-
-**Summary:** {{url}}/api/product/find
-
-**Description:** API get list product
-
-**HTTP Request**
-`***GET*** /product/find` 
-
-**Parameters**
-
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
-| x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | oke |
-
-## /PRODUCT/FINDONE/1
-**Method:** GET
-
-**Summary:** {{url}}/api/product/findOne/1
-
-**Description:** API detail product
-
-**HTTP Request**
-`***GET*** /product/findOne/1` 
-
-**Parameters**
-
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
-| x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | oke |
-
 # CAMPAIGN
 ## /CAMPAIGN/COUNT
 **Method:** GET
@@ -691,28 +621,6 @@ GET /product/find?image.imageThumb=link
 | 200 | oke |
 
 # EXCHANGE
-## /EXCHANGE/SCHEMA
-**Method:** GET
-
-**Summary:** {{url}}/api/exchange/schema
-
-**Description:** API count
-
-**HTTP Request**
-`***GET*** /exchange/schema` 
-
-**Parameters**
-
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
-| x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | oke |
 
 ## /EXCHANGE/COUNT
 **Method:** GET
