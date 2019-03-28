@@ -548,6 +548,104 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
+# ASSET
+## /ASSET/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/asset/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /asset/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /ASSET/LIST
+**Method:** GET
+
+**Summary:** {{url}}/api/asset/list
+
+**Description:** API get list asset
+
+**HTTP Request**
+`***GET*** /asset/list` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /ASSET/CREATE
+**Method:** POST
+
+**Summary:** {{url}}/api/asset/create
+
+**Description:** API create asset
+
+**HTTP Request**
+`***POST*** /asset/create` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| program_id | header |  | Yes | number |
+| reward_id | header |  | Yes | number |
+| brand_id | header |  | No | number |
+| comment | header |  | No | string |
+| note | header |  | No | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /ASSET/USE/1
+**Method:** PUT
+
+**Summary:** {{url}}/api/asset/use/1
+
+**Description:** API use asset
+
+**HTTP Request**
+`***PUT*** /asset/use/1` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # CAMPAIGN
 ## /CAMPAIGN/COUNT
 **Method:** GET
