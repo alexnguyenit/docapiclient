@@ -14,6 +14,7 @@ Table of contents
 1. [User](#user)
 1. [Article](#article)
 1. [Offer](#offer)
+1. [Asset](#asset)
 1. [Exchange](#exchange)
 1. [Wishlist](#wishlist)
 
