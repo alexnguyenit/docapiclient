@@ -549,6 +549,59 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
+## /OFFER/USE
+**Method:** POST
+
+**Summary:** {{url}}/api/offer/use
+
+**Description:** API use offer
+
+**HTTP Request**
+`***POST*** /offer/use`
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| program_id | header |  | Yes | string |
+| reward_id | header |  | Yes | string |
+| type | header |  | No | string |
+| order_id | header |  | No | string |
+| partner_id | header |  | No | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /OFFER/CHECKUSE
+**Method:** POST
+
+**Summary:** {{url}}/api/offer/checkUse
+
+**Description:** API checkUse offer
+
+**HTTP Request**
+`***POST*** /offer/checkUse`
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| program_id | header |  | Yes | string |
+| reward_id | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # ASSET
 ## /ASSET/COUNT
 **Method:** GET
