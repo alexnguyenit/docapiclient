@@ -404,6 +404,30 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
+## /USER/QRCODE
+
+**Method:** GET
+
+**Summary:** {{url}}/api/user/qrcode
+
+**Description:** API qrcode
+
+**HTTP Request**
+`***GET*** /user/qrcode` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # ARTICLE
 ## /ARTICLE/COUNT
 **Method:** GET
