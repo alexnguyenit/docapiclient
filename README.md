@@ -17,6 +17,7 @@ Table of contents
 1. [Asset](#asset)
 1. [Exchange](#exchange)
 1. [Wishlist](#wishlist)
+1. [Order](#order)
 
 # Tips
 ## STATUS CODE
@@ -990,6 +991,57 @@ GET /product/find?image.imageThumb=link
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# ORDER
+## /ORDER/QRCODE
+**Method:** GET
+
+**Summary:** {{url}}/api/order/qrcode
+
+**Description:** API get qrcode order
+
+**HTTP Request**
+`***GET*** /order/qrcode` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| order_id | query | Ex: I2932FUOPFW | Yes | string |
+| partner_id | query | Ex: 1 | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /ORDER/DETAIL
+**Method:** GET
+
+**Summary:** {{url}}/api/order/detail
+
+**Description:** API get order detail
+
+**HTTP Request**
+`***GET*** /order/detail` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| order_id | query | Ex: I2932FUOPFW | Yes | string |
+| partner_id | query | Ex: 1 | Yes | string |
 
 **Responses**
 
