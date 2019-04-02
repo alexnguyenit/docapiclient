@@ -593,8 +593,8 @@ GET /product/find?image.imageThumb=link
 | Authorization | header |  | Yes | string |
 | program_id | header |  | Yes | string |
 | reward_id | header |  | Yes | string |
-| type | header |  | No | string |
-| order_id | header |  | No | string |
+| type | header | default: POS | No | string |
+| code | header |  | No | string |
 | partner_id | header |  | No | string |
 
 **Responses**
