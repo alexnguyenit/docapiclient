@@ -1003,12 +1003,12 @@ GET /product/find?image.imageThumb=link
 ## /ORDER/QRCODE
 **Method:** GET
 
-**Summary:** {{url}}/api/order/qrcode
+**Summary:** {{url}}/api/order/qrcode?code=I2932FUOPFW&partner_id=1
 
 **Description:** API get qrcode order
 
 **HTTP Request**
-`***GET*** /order/qrcode` 
+`***GET*** /order/qrcode?code=I2932FUOPFW&partner_id=1` 
 
 **Parameters**
 
@@ -1028,12 +1028,12 @@ GET /product/find?image.imageThumb=link
 ## /ORDER/DETAIL
 **Method:** GET
 
-**Summary:** {{url}}/api/order/detail
+**Summary:** {{url}}/api/order/detail?code=I2932FUOPFW&partner_id=1
 
 **Description:** API get order detail
 
 **HTTP Request**
-`***GET*** /order/detail` 
+`***GET*** /order/detail?code=I2932FUOPFW&partner_id=1` 
 
 **Parameters**
 
