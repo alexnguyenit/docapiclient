@@ -1073,7 +1073,7 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-## /location/listDistrict/01
+## /LOCATION/LISTDISTRICT/01
 **Method:** GET
 
 **Summary:** {{url}}/api/location/listDistrict/01
@@ -1095,7 +1095,7 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
-## /location/listWard/001
+## /LOCATION/LISTWARD/001
 **Method:** GET
 
 **Summary:** {{url}}/api/location/listWard/001
