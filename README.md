@@ -1015,7 +1015,7 @@ GET /product/find?image.imageThumb=link
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| order_id | query | Ex: I2932FUOPFW | Yes | string |
+| code | query | Ex: I2932FUOPFW | Yes | string |
 | partner_id | query | Ex: 1 | Yes | string |
 
 **Responses**
@@ -1040,7 +1040,7 @@ GET /product/find?image.imageThumb=link
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| order_id | query | Ex: I2932FUOPFW | Yes | string |
+| code | query | Ex: I2932FUOPFW | Yes | string |
 | partner_id | query | Ex: 1 | Yes | string |
 
 **Responses**
