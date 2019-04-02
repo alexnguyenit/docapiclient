@@ -18,6 +18,7 @@ Table of contents
 1. [Exchange](#exchange)
 1. [Wishlist](#wishlist)
 1. [Order](#order)
+1. [Location](#location)
 
 # Tips
 ## STATUS CODE
@@ -1042,6 +1043,73 @@ GET /product/find?image.imageThumb=link
 | Authorization | header |  | Yes | string |
 | code | query | Ex: I2932FUOPFW | Yes | string |
 | partner_id | query | Ex: 1 | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# LOCATION
+## /LOCATION/LISTPROVINCE
+**Method:** GET
+
+**Summary:** {{url}}/api/location/listProvince
+
+**Description:** API get listProvince
+
+**HTTP Request**
+`***GET*** /location/listProvince` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /location/listDistrict/01
+**Method:** GET
+
+**Summary:** {{url}}/api/location/listDistrict/01
+
+**Description:** API get listDistrict
+
+**HTTP Request**
+`***GET*** /location/listDistrict/01` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /location/listWard/001
+**Method:** GET
+
+**Summary:** {{url}}/api/location/listWard/001
+
+**Description:** API get listWard
+
+**HTTP Request**
+`***GET*** /location/listWard/001` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
 
 **Responses**
 
