@@ -19,6 +19,7 @@ Table of contents
 1. [Wishlist](#wishlist)
 1. [Order](#order)
 1. [Location](#location)
+1. [Ranking](#ranking)
 
 # Tips
 ## STATUS CODE
@@ -1110,6 +1111,30 @@ GET /product/find?image.imageThumb=link
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# RANKING
+## /RANKING/LIST
+**Method:** GET
+
+**Summary:** {{url}}/api/ranking/list
+
+**Description:** API get ranking
+
+**HTTP Request**
+`***GET*** /ranking/list` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
 
 **Responses**
 
