@@ -1167,3 +1167,26 @@ GET /product/find?image.imageThumb=link
 | Code | Description |
 | ---- | ----------- |
 | 200 | oke |
+
+# Service
+## /SERVICE/CHECK
+**Method:** GET
+
+**Summary:** {{url}}/api/service/check
+
+**Description:** API check service
+
+**HTTP Request**
+`***GET*** /api/service/check` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header | system | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
