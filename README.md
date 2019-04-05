@@ -20,6 +20,8 @@ Table of contents
 1. [Order](#order)
 1. [Location](#location)
 1. [Ranking](#ranking)
+1. [Partner](#partner)
+1. [Service](#service)
 
 # Tips
 ## STATUS CODE
@@ -1128,6 +1130,30 @@ GET /product/find?image.imageThumb=link
 
 **HTTP Request**
 `***GET*** /ranking/list` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# Partner
+## /PARTNER/DETAIL/1
+**Method:** GET
+
+**Summary:** {{url}}/api/partner/detail/1
+
+**Description:** API get partner detail
+
+**HTTP Request**
+`***GET*** /api/partner/detail/1` 
 
 **Parameters**
 
