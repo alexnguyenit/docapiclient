@@ -633,6 +633,30 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | ---- | ----------- |
 | 200 | oke |
 
+## /OFFER/USEPOS
+**Method:** POST
+
+**Summary:** {{url}}/api/offer/usePos
+
+**Description:** API usePos offer
+
+**HTTP Request**
+`***POST*** /offer/usePos`
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| code | header |  | No | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 ## /OFFER/CHECKUSE
 **Method:** POST
 
@@ -677,6 +701,33 @@ Dùng mã code: E4824S3T9861239 để demo
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
 | code_sys | header | ex: E4824S3T9861239 | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /OFFER/SCANNER
+**Method:** POST
+
+**Summary:** {{url}}/api/offer/scanner
+
+**Description:** API scanner offer
+
+Dùng mã code: của reward
+
+**HTTP Request**
+`***POST*** /offer/scanner`
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| code | header | Là code_sys của reward | Yes | string |
+| type | header | type=barcode or type=qrcode | Yes | string |
 
 **Responses**
 
