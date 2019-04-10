@@ -433,6 +433,33 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
+## /USER/SCANNER
+
+**Method:** GET
+
+**Summary:** {{url}}/api/user/scanner
+
+**Description:** API user scanner
+
+Với type = null sẽ trả ra cả barcode và qrcode
+
+**HTTP Request**
+`***GET*** /user/scanner` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| type | header | Ex: type=barcode or type=qrcode | No | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # ARTICLE
 ## /ARTICLE/COUNT
 **Method:** GET
