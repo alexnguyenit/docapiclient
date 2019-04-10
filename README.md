@@ -631,6 +631,32 @@ GET /product/find?image.imageThumb=link
 | ---- | ----------- |
 | 200 | oke |
 
+## /OFFER/TOPUP
+**Method:** POST
+
+**Summary:** {{url}}/api/offer/topup
+
+**Description:** API topup offer (nạp điểm)
+
+Dùng mã code: E4824S3T9861239 để demo
+
+**HTTP Request**
+`***POST*** /offer/topup`
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| code_sys | header | ex: E4824S3T9861239 | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # ASSET
 ## /ASSET/COUNT
 **Method:** GET
