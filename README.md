@@ -935,6 +935,14 @@ Dùng mã code: của reward
 
 **Description:** API get list exchange
 
+Type:Kiểu tương tác giao dịch:
+
+0 - Hoạt động không ảnh hưởng tới điểm
+
+1 - Nạp điểm
+
+2 - Tiêu điểm
+
 **HTTP Request**
 `***GET*** /exchange/find` 
 
