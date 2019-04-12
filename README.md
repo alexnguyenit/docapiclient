@@ -935,7 +935,9 @@ Dùng mã code: của reward
 
 **Description:** API get list exchange
 
-Type:Kiểu tương tác giao dịch:
+Type (Kiểu tương tác giao dịch)
+
+Có các type:
 
 0 - Hoạt động không ảnh hưởng tới điểm
 
