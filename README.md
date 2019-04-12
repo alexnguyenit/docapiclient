@@ -1158,14 +1158,14 @@ Dùng mã code: của reward
 | 200 | oke |
 
 ## /ORDER/PRODUCT
-**Method:** GET
+**Method:** POST
 
 **Summary:** {{url}}/api/order/product
 
 **Description:** API sử dụng dịch vụ sẽ được tích điểm
 
 **HTTP Request**
-`***GET*** /order/product` 
+`***POST*** /order/product` 
 
 **Parameters**
 
