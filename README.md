@@ -225,6 +225,7 @@ GET /product/find?image.imageThumb=link
 | email | body |  | Yes |  |
 | lastname | body |  | No |  |
 | brand_id | body |  | No |  |
+| brand_code | body |  | Yes |  |
 | rank_id | body |  | No |  |
 | category_id | body |  | No |  |
 | group_id | body |  | No |  |
