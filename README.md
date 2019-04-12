@@ -1157,6 +1157,34 @@ Dùng mã code: của reward
 | ---- | ----------- |
 | 200 | oke |
 
+## /ORDER/PRODUCT
+**Method:** GET
+
+**Summary:** {{url}}/api/order/product
+
+**Description:** API sử dụng dịch vụ sẽ được tích điểm
+
+**HTTP Request**
+`***GET*** /order/product` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| code | body | Ex: Mã sản phẩm, hoặc mã đơn hàng | Yes | string |
+| partner_code | body | Ex: Mã đối tác, có thể không có trên hệ thống | No | string |
+| base_point | body | Ex: Điểm thưởng | Yes | string |
+| total | body | Ex: Giá trị sản phẩm or đơn hàng | Yes | string |
+| data | body | Ex: Dữ liệu sản phẩm or đơn hàng | No | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # LOCATION
 ## /LOCATION/LISTPROVINCE
 **Method:** GET
