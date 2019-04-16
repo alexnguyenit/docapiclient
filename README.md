@@ -12,6 +12,7 @@ Table of contents
 
 1. [Tips](#tips)
 1. [User](#user)
+1. [Category](#category)
 1. [Article](#article)
 1. [Offer](#offer)
 1. [Asset](#asset)
@@ -456,6 +457,76 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
 | type | header | Ex: type=barcode or type=qrcode | No | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# CATEGORY
+## /CATEGORY/COUNT
+**Method:** GET
+
+**Summary:** {{url}}/api/category/count
+
+**Description:** API count
+
+**HTTP Request**
+`***GET*** /category/count` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /CATEGORY/FIND
+**Method:** GET
+
+**Summary:** {{url}}/api/category/find
+
+**Description:** API get list category
+
+**HTTP Request**
+`***GET*** /category/find` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /CATEGORY/FINDONE/1
+**Method:** GET
+
+**Summary:** {{url}}/api/category/findOne/1
+
+**Description:** API detail category
+
+**HTTP Request**
+`***GET*** /category/findOne/2` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
 
 **Responses**
 
