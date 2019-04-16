@@ -449,7 +449,7 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| type | header | Ex: type=barcode or type=qrcode | No | string |
+| type | query | Ex: type=barcode or type=qrcode | No | string |
 
 **Responses**
 
@@ -793,8 +793,8 @@ Dùng mã code: của reward
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| code | header | Là code_sys của reward | Yes | string |
-| type | header | type=barcode or type=qrcode | Yes | string |
+| code | query | Là code_sys của reward | Yes | string |
+| type | query | type=barcode or type=qrcode | Yes | string |
 
 **Responses**
 
