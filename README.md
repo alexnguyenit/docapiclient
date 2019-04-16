@@ -1340,12 +1340,14 @@ Có các type:
 ## /NAVIGATION/LIST
 **Method:** GET
 
-**Summary:** {{url}}/api/navigation/list
+**Summary:** {{url}}/api/navigation/list?type=menu_portal
 
 **Description:** API get navigation
 
+type=menu_portal
+
 **HTTP Request**
-`***GET*** /navigation/list` 
+`***GET*** /navigation/list?type=menu_portal` 
 
 **Parameters**
 
