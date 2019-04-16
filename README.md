@@ -21,7 +21,8 @@ Table of contents
 1. [Location](#location)
 1. [Ranking](#ranking)
 1. [Partner](#partner)
-1. [Service](#service)
+1. [Service](#service) 
+1. [Navigation] (#navigation)
 
 # Tips
 ## STATUS CODE
@@ -1327,6 +1328,30 @@ Có các type:
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header | system | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# Navigation
+## /NAVIGATION/LIST
+**Method:** GET
+
+**Summary:** {{url}}/api/navigation/list
+
+**Description:** API get navigation
+
+**HTTP Request**
+`***GET*** /navigation/list` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
 
 **Responses**
 
