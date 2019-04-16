@@ -221,17 +221,10 @@ GET /product/find?image.imageThumb=link
 | ---- | ---------- | ----------- | -------- | ---- |
 | Content-Type | header |  | Yes | string |
 | x-scope | header |  | Yes | string |
-| firstname | body |  | Yes |  |
-| password | body |  | Yes |  |
-| phone | body |  | Yes |  |
-| confirm | body |  | Yes |  |
-| email | body |  | Yes |  |
-| lastname | body |  | No |  |
-| brand_id | body |  | No |  |
-| brand_code | body |  | Yes |  |
-| rank_id | body |  | No |  |
-| category_id | body |  | No |  |
-| group_id | body |  | No |  |
+| otp | body |  | Yes | string |
+| token | body |  | Yes | string |
+| password | body |  | Yes | string |
+| brand_code | body |  | No | string |
 
 **Responses**
 
