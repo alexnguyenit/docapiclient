@@ -22,7 +22,8 @@ Table of contents
 1. [Ranking](#ranking)
 1. [Partner](#partner)
 1. [Service](#service) 
-1. [Navigation] (#navigation)
+1. [Navigation](#navigation)
+1. [Brand](#brand)
 
 # Tips
 ## STATUS CODE
@@ -1335,7 +1336,7 @@ Có các type:
 | ---- | ----------- |
 | 200 | oke |
 
-# Navigation
+# NAVIGATION
 ## /NAVIGATION/LIST
 **Method:** GET
 
@@ -1352,6 +1353,29 @@ Có các type:
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+# BRAND
+## /BRAND/DETAIL
+**Method:** GET
+
+**Summary:** {{url}}/api/brand/detail?alias=microsoft
+
+**Description:** API get brand
+
+**HTTP Request**
+`***GET*** /brand/detail` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header | client | Yes | string |
 
 **Responses**
 
