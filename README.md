@@ -688,11 +688,11 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| program_id | header |  | Yes | string |
-| reward_id | header |  | Yes | string |
-| type | header | default: pos | No | string |
-| code | header |  | No | string |
-| partner_id | header |  | No | string |
+| program_id | body |  | Yes | string |
+| reward_id | body |  | Yes | string |
+| type | body | default: pos | No | string |
+| code | body |  | No | string |
+| partner_id | body |  | No | string |
 
 **Responses**
 
@@ -716,7 +716,7 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| code | header |  | No | string |
+| code | body |  | No | string |
 
 **Responses**
 
@@ -740,8 +740,8 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| program_id | header |  | Yes | string |
-| reward_id | header |  | Yes | string |
+| program_id | body |  | Yes | string |
+| reward_id | body |  | Yes | string |
 
 **Responses**
 
@@ -767,7 +767,7 @@ Dùng mã code: E4824S3T9861239 để demo
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| code_sys | header | ex: E4824S3T9861239 | Yes | string |
+| code_sys | body | ex: E4824S3T9861239 | Yes | string |
 
 **Responses**
 
@@ -795,6 +795,30 @@ Dùng mã code: của reward
 | Authorization | header |  | Yes | string |
 | code | query | Là code_sys của reward | Yes | string |
 | type | query | type=barcode or type=qrcode | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
+## /OFFER/TRANSFER
+**Method:** POST
+
+**Summary:** {{url}}/api/offer/transfer
+
+**Description:** API transfer offer
+
+**HTTP Request**
+`***POST*** /offer/transfer`
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| point | body |  | Yes | string |
 
 **Responses**
 
