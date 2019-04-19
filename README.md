@@ -1113,6 +1113,39 @@ Có các type:
 | ---- | ----------- |
 | 200 | oke |
 
+## /EXCHANGE/findByPartner
+**Method:** GET
+
+**Summary:** {{url}}/api/exchange/findByPartner
+
+**Description:** API get list exchange findByPartner
+
+Type (Kiểu tương tác giao dịch)
+
+Có các type:
+
+0 - Hoạt động không ảnh hưởng tới điểm
+
+1 - Nạp điểm
+
+2 - Tiêu điểm
+
+**HTTP Request**
+`***GET*** /exchange/findByPartner` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| x-scope | header |  | Yes | string |
+| Authorization | header |  | Yes | string |
+| partner_code | query | Yes | string |
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | oke |
+
 # WISHLIST
 ## /WISHLIST/COUNT
 **Method:** GET
