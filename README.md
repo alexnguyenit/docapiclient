@@ -716,7 +716,8 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
 | Authorization | header |  | Yes | string |
-| code | body |  | No | string |
+| code | body | REJF6LS2M2900191 (là code_sys của voucher) | Yes | string |
+| partner_code | body | BBQ (là code của partner) | Yes | string |
 
 **Responses**
 
