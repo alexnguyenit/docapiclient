@@ -6,7 +6,7 @@ This is API DOCUMENT LOYALTY CLIENT
 
 **x-scope:** client
 
-**base-url:** http://183.91.11.56:3005/
+**base-url:** http://183.91.11.56:5000/
 
 Table of contents
 
