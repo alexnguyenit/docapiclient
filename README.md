@@ -496,7 +496,7 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
+| Authorization | header |  | No | string |
 
 **Responses**
 
@@ -519,7 +519,7 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
+| Authorization | header |  | No | string |
 
 **Responses**
 
@@ -543,7 +543,7 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
+| Authorization | header |  | No | string |
 
 **Responses**
 
@@ -566,7 +566,7 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
+| Authorization | header |  | No | string |
 
 **Responses**
 
@@ -589,7 +589,7 @@ Với type = null sẽ trả ra cả barcode và qrcode
 | Name | Located in | Description | Required | Type |
 | ---- | ---------- | ----------- | -------- | ---- |
 | x-scope | header |  | Yes | string |
-| Authorization | header |  | Yes | string |
+| Authorization | header |  | No | string |
 
 **Responses**
 
