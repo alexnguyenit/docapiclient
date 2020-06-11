@@ -221,10 +221,11 @@ GET /product/find?image.imageThumb=link
 | ---- | ---------- | ----------- | -------- | ---- |
 | Content-Type | header |  | Yes | string |
 | x-scope | header |  | Yes | string |
-| otp | body |  | Yes | string |
-| token | body |  | Yes | string |
+| firstname | body |  | Yes | string |
+| lastname | body |  | No | string |
+| phone | body |  | Yes | string |
+| email | body |  | No | string |
 | password | body |  | Yes | string |
-| brand_code | body |  | No | string |
 
 **Responses**
 
