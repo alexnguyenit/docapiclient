@@ -191,12 +191,12 @@ GET /product/find?image.imageThumb=link
 
 **Parameters**
 
-| Name | Located in | Description | Required | Type |
-| ---- | ---------- | ----------- | -------- | ---- |
+| Name | Located in | Description | Required | Type | Default |
+| ---- | ---------- | ----------- | -------- | ---- | ---- |
 | Content-Type | header |  | Yes | string |
-| x-scope | header |  | Yes | string |
-| account | body |  | Yes |  |
-| password | body |  | Yes |  |
+| x-scope | header |  | Yes | string | client |
+| account | body |  | Yes |  | 1234567899 |
+| password | body |  | Yes |  |123456 |
 
 **Responses**
 
